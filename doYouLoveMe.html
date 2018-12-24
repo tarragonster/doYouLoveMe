@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+    function yesDisplay() {
+        alert("we love you too!")
+    }
+    function hovering() {
+
+        var x = Math.round(Math.random()*window.innerWidth);
+        var y = Math.round(Math.random()*window.innerHeight);
+
+        document.getElementById("btnNo").style.left = x + 'px';
+        document.getElementById("btnNo").style.top = y + 'px';
+    }
+
+</script>
+<body>
+    <h2 style="position:absolute;left: 200px;top: 170px;">Do you love me?</h2>
+    <form>
+        <input type="button" id="btnYes" style="position: absolute;left: 220px;top: 230px;" onclick="yesDisplay();" value="yes">
+        <input type="button" id="btnNo" style="position: absolute;left: 280px;top: 230px;" onmouseover="hovering();" value="no">
+    </form>
+
+</body>
+</html>
